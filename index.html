@@ -5,28 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .box {
-            height: 24px;
-            padding: 10px;
-            margin: 10px;
-            width: 24px;
-            border: 3px solid black;
-        }
-    </style>
 </head>
+<style>
+    .red {
+        background-color: red;
+    }
+</style>
 
 <body>
 
-    <div class="container">
-        <div class="box">box 1</div>
-        <div class="box">box 1.5</div>
-        <div id="red" class="box">box 2</div>
-        <div class="box">box 3</div>
-        <div class="box">box 4</div>
-        <div class="box">box 5</div>
+    <div class="container red green">
+        <div class="box" style="display: flex;">I am box</div>
+        <div>hii I am hero</div>
+        <script>
+            let cont = document.querySelector('.container');
+            cont.insertAdjacentHTML("afterbegin", "<b> I am a boy </b>")
+        </script>
+
     </div>
-    <script src="index.js"></script>
 </body>
 
 </html>
